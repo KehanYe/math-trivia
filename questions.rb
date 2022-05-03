@@ -7,8 +7,8 @@ class Questions
     @int_tw0 = rand(1...20)
   end
 
-  def question(player)
-    puts "Asking #{player}: #{@int_one} + #{@int_tw0} = ❓"
+  def question
+    puts "What is #{@int_one} + #{@int_tw0} = ❓"
     @answer = @int_one + @int_two
   end
   
@@ -17,9 +17,11 @@ class Questions
     @input = $stdin.gets.chomp.to_i
     
     if input?(@answer)
+      true
       puts "\nCorrect ✅ [ENTER]"
       STDIN.getc
     else 
+      false
       puts "\nWrong answer 💀 [ENTER]"
       STDIN.getc
     end
