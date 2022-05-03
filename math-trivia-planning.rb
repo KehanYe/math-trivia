@@ -16,8 +16,7 @@
     update lives of each player
 
   Game class -> game loop
-    Primary Objective: manage game state
-      Connecting question answered to player life total based on Turn
+    Primary Objective: manage game state -> game start, turn order, game end
     States: game start + new turn, switch turn + new turn, end game
     Initalizes: player_1, player_2, current_player(default to be player one?) => STRETCH current_player(can be randomized or picked)
     Behaviour(methods): End Game, Announcer
@@ -36,13 +35,12 @@
     5. Switches turns to other player class, repeat step 2-4 => REF Turn class
     5. End game if after a turn, a player is dead => REF Player Dead method from Player Class
 
-  Turn Class -> Manage turn Order
-    Primary Objective: Track and manage turn order
+  Turn Class -> Manages actions inside each turn
+    Primary Objective: Connecting question answered to player life total based on Turn
     States: player_1 turn, player_2 turn
     Initializes: Current Turn, Turn Order
     Behaviour: Switch Turn
 
-    Still TBD?
 
 
   Question class

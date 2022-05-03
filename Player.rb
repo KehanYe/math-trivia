@@ -11,7 +11,8 @@ class Player
     puts "You lost a life. You have #{@lives}/3 lives left"
   end
 
-  def is_dead
-    @lives < 1
+  def alive?
+    @lives <= 1
   end
+
 end
