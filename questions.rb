@@ -1,5 +1,7 @@
 class Questions
 
+  attr_accessor :answer #not sure if this is necessary yet
+
   def initialize()
     @int_one = rand(1...20)
     @int_tw0 = rand(1...20)
@@ -23,5 +25,5 @@ class Questions
     end
 
   end
-  
+
 end
