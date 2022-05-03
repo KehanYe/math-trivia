@@ -50,7 +50,7 @@
     Behaviour(methods): creates question and evaluates answer
 
     Outputs randomized math question(addition) => STRETCH randomize to include subtraction, multiplication, division
-    Displays the randomly selected question
+    Displays the randomly selected question and asks current player
     Takes a commandline USER input as answer
     Evaluates answer vs correct answer
     retuns a boolean value indicating if question was properly answered
