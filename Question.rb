@@ -1,12 +1,13 @@
 class Question
 
+  attr_reader :answer 
+
   def initialize
-    @int_one = rand(1...20)
-    @int_two = rand(1...20)
-    @answer = @int_one + @int_two
+    @num = Array.new(2){ rand(1...30) }
+    @answer = @num.sum
   end
 
   def to_s
-    "What is #{@int_one} + #{@int_two} = ❓"
+    "What is #{@num[0]} + #{@num[1]} = ❓"
   end
 end
